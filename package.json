@@ -1,0 +1,32 @@
+{
+  "name": "isaac-library",
+  "version": "1.0.0",
+  "description": "적용하기 위한 javascipt library작성",
+  "main": "app.js",
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:\\doc\\Etc"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "es6"
+  ],
+  "author": "Isaac",
+  "license": "ISC"
+}
