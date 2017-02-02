@@ -19,6 +19,10 @@
   */
   'use strict';
 
+  //Define members
+  var iLib = window.iLib || (window.iLib = {}),
+  isPass = false;
+
   function module(kind, funcNm4Callback) {
     switch (kind) {
       case '':
@@ -32,7 +36,7 @@
     this._name = name;
   }
 
-  base.prototype = Object.create(nuill, {
+  base.prototype = Object.create(null, {
     contructor: {
       value: base
     },
@@ -102,3 +106,13 @@ function initTimer(){
   }
   excutedCnt++;
 }
+
+//TEST for ES6의 Arrow Functions설명예시
+var obj = {
+  i:10,
+  B:() => console.log(this.i, this),
+  c:function(){
+    console.log(this.i, this);
+  }
+};
+

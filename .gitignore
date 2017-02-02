@@ -1,4 +1,4 @@
 *.com
 *.exe
-
 *.zip
+/node_modules
