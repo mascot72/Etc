@@ -84,7 +84,7 @@ var formV = new validToDoc({
 
 
 //Ajax Bloking회피하기위해 Interval처리
-myVar = setInterval(function(){ initTimer() }, 500);    //0.5초마다
+myVar = setInterval(function(){ initTimer(); }, 500);    //0.5초마다
 var myVar;  //tiemer flag Object
 var excutedCnt = 0; //실행된 수
 var isSavedStage = false;   //Header저장종료여부
