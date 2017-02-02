@@ -73,7 +73,7 @@
 })(window);
 
 //Update before
-var formV = new validToDoc({
+var formV = new iLib.validToDoc({
   args : ['docId'],
   success:function(data){
     if (data){
@@ -81,7 +81,6 @@ var formV = new validToDoc({
     }
   }
 });
-
 
 //Equip Update before
 //Request before
