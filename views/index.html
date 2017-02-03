@@ -1,14 +1,87 @@
 <html>
-  <head>
-    <title>Main</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="/js/module.sp.doc.valid.js"></script>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    Hey, this is index page
-    <div class="well"></div>
-  </body>
+
+    <head>
+        <title>NodeJS / Libraries firstpage</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="/js/module.sp.doc.valid.js"></script>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <script src="/js/jquery.min.js"></script>
+        <script src="https://rawgit.com/RickStrahl/jquery-resizable/master/src/jquery-resizable.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="page-container">
+            <h1>
+          jquery-resizable - A simple splitter panel
+       </h1>
+            <hr />
+            <p>
+                Simple example that demonstrates how to create slidable two-pane layouts <a href="http://caniuse.com/#search=flexbox">using FlexBox</a> and the resizable plug-in. Note that Flexbox is not required, but used here to keep the layout simple.
+            </p>
+            <label>Horizontal Splitter Panes:</label>
+            <div class="panel-container">
+
+                <div class="panel-left">
+                    left panel
+                </div>
+                <div class="splitter">
+                </div>
+                <div class="panel-right">
+                    right panel
+                    <div class="well col-xs-6">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active"><a href="#">Home</a></li>
+                            <li role="presentation"><a href="#">Profile</a></li>
+                            <li role="presentation"><a href="#">Messages</a></li>
+                        </ul>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">Header</div>
+                            <div class="panel-body" style="height:300px;min-height:300px;">내용</div>
+                            <div class="panel-footer">c</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label>Vertical Splitter Panes:</label>
+            <div class="panel-container-vertical">
+                <div class="panel-top">
+                    top panel
+                </div>
+
+                <div class="splitter-horizontal">
+                </div>
+                <div class="panel-bottom">
+                    bottom panel
+                </div>
+            </div>
+            <hr />
+            <p>
+                This example creates two resizables for the horizontal and vertical splitter panes:
+            </p>
+
+        </div>
+
+
+
+
+    </body>
+
 </html>
+<script>
+    <!--
+    $(document).ready(function() {
+
+        $(".panel-left").resizable({
+            handleSelector: ".splitter",
+            resizeHeight: false
+        });
+
+        $(".panel-top").resizable({
+            handleSelector: ".splitter-horizontal",
+            resizeWidth: false
+        });
+    });
+    console.log('isaac Library=', iLib);
+    //-->
+</script>

@@ -19,6 +19,8 @@
   */
   'use strict';
 
+  var vm;
+
   function module(kind, funcNm4Callback) {
     switch (kind) {
       case '':
@@ -30,6 +32,7 @@
 
   function base(name, func){
     //this._name = name;
+    vm = this;
   }
 
   base.prototype = Object.create(null, {
@@ -47,14 +50,14 @@
       init:function(){
         //-
       },
-      beforeSave:function(){
+      beforeSave:function(data){
 
         func(data);
       }
     };
   }
 
-  var iLib = new validToDoc('isaac', (data) => { console.log(data); });
+  window.iLib = window.iLib || new validToDoc('isaac', (data) => { console.log(data); });
 
   validToDoc.prototype = Object.create(base.prototype, {
     constructor: {
